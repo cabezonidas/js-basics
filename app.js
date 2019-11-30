@@ -4,3 +4,8 @@ var getDigits = () => {
 var logDigits = () => {
   console.log(getDigits());
 };
+
+module.exports = {
+  getDigits,
+  logDigits,
+};
