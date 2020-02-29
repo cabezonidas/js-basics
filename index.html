@@ -10,5 +10,54 @@
     <script src="app.js"></script>
     <p>Tell me the digits</p>
     <button onclick="logDigits()">Click me!</button>
+    <h1>Team</h1>
+    <ul id="players"></ul>
+    <h2>Keepers</h2>
+    <ul id="keepers"></ul>
+    <h2>Defenders</h2>
+    <ul id="defenders"></ul>
+    <h2>Midfielders</h2>
+    <ul id="midfielders"></ul>
+    <h2>Attackers</h2>
+    <ul id="attackers"></ul>
   </body>
 </html>
+<script>
+  (function() {
+    var ul1 = document.getElementById("players");
+    soccerTeam.forEach(p => {
+      var node = document.createElement("li");
+      var textnode = document.createTextNode(p.name);
+      node.appendChild(textnode);
+      ul1.appendChild(node);
+    });
+    var ul2 = document.getElementById("keepers");
+    keepers.forEach(p => {
+      var node = document.createElement("li");
+      var textnode = document.createTextNode(p.name);
+      node.appendChild(textnode);
+      ul2.appendChild(node);
+    });
+    var ul3 = document.getElementById("defenders");
+    defenders.forEach(p => {
+      var node = document.createElement("li");
+      var textnode = document.createTextNode(p.name);
+      node.appendChild(textnode);
+      ul3.appendChild(node);
+    });
+    var u4 = document.getElementById("midfielders");
+    midfielders.forEach(p => {
+      var node = document.createElement("li");
+      var textnode = document.createTextNode(p.name);
+      node.appendChild(textnode);
+      ul4.appendChild(node);
+    });
+    var u5 = document.getElementById("attackers");
+    attackers.forEach(p => {
+      var node = document.createElement("li");
+      var textnode = document.createTextNode(p.name);
+      node.appendChild(textnode);
+      u5.appendChild(node);
+    });
+  })();
+</script>
